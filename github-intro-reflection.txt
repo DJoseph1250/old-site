@@ -1,0 +1,21 @@
+1. Write an explanation of and compare git and GitHub to a non-technical audience.
+Git is a program on your computer that keeps track of all the changes you make to a file. 
+Usually when you save a file you overwrite the previous save unless you create a different save with a different name.
+Git essentially saves the saves and allows you to go back and view them. You can also add messages to these saves to know exactly what you changed. Github stores these saves online and allows you to give access to other people, to view and download your work, for their own purposes, without changing the original. The simplest way to describe them and their differences is that Git is like a folder on your computer and github is like dropbox.
+
+2. Describe what version control is and how GitHub helps with it.
+Version control allows one to save multiple copies of a file, without overwriting previous saves. 
+Github allows you to store these changes online so that you can have both local and remote saves.
+Github also allows others to view and work on your work, if you want them to, without compromising the original.
+
+3. Why do developers use version control (git)? Does that make sense to you? Why or why not?
+In the process of development, a developer will make multiple changes to their code, for multiple reasons.
+Git allows them to easily do that, while also giving them the option to add a message detailing the changes.
+During the development process of large projects 100s of changes could potentially be made.
+Having a copy of each change with a message detailing those changes is very useful. It also gives them the freedom to experiment with multiple versions known as "branches" so they can experiment on those and then update the original with whatever works best for them.
+It makes perfect sense to use and not just for developers. Everyone that does the majority of their work on a computer should use it.
+It's relatively simple to use and very useful.
+
+4. What doesn't make sense? What does?
+At first, little of this made sense to me. I had heard of github before and assumed that it and git were the same thing.
+When I discovered they weren't I was slightly confused. However, after reading a provided blog post on the differences I now have at least a basic understanding of their purpose and their differences.
