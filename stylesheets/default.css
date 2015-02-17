@@ -1,3 +1,60 @@
-html {
-	background-image: ;
+#contact {
+	background-color: #F37D5F;
+	float: right;
+	border-style: solid;
+	border-color: #F37356;
+	border-width: 3px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+#contact ul {
+	padding: 0px 0px 0px 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#contact li {
+	list-style: none;
+	text-align: center;
+}
+
+#contact a {
+	text-decoration: none;
+	color: #AD575A;
+}
+
+#nav {
+	display: inline-block;
+	background-color: #F37356;
+	border-radius: 5px;
+	margin: 0px 0px 0px 450px;
+	float: left;
+}
+
+#selfie {
+    width: 50px;
+    height: auto;
+    float: right;
+    margin-right: 0px;
+}
+
+#welcome {
+	display: inline-block;
+	float: left;
+	clear: left;
+	margin: 150px 0px 0px 250px;
+}
+
+#index {
+	background-color: #F26C4F;
+}
+
+body {
+	width: 100%;
+}
+
+table a {
+	color: #AD575A;
+	text-decoration: none;
 }
