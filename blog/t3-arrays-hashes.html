@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Sweet Talk - Arrays &amp; Hashes</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  </head>
+
+  <body>
+    <div id="head">
+      <img src="http://f1.bcbits.com/img/0003590716_100.png" alt="Sweet Talk" />
+      <h2 class="head">Arrays &amp; Hashes</h2>
+      <h4 class="head">2/22/2105</h4>
+    </div>
+    <div id="center">
+      <div id="content">
+        <p>
+          &nbsp; Arrays and Hashes. Similar yet distinctly different. In this blog post I will attempt to teach you the difference and the appropriate situation in which to use them. Let's start with Arrays.<br><br>
+          &nbsp; In Ruby, Arrays are lists. But unlike most lists they start counting from 0 instead of 1. The first entrance in an Array is actually the 0th (yes I know that's not a real term). This can be a bit confusing at first, but over time it should sink in. There are 2 ways to start an Array:<br><br>
+          <code>Array_name = Array.new<br><br>
+          and<br><br>
+          Array_name = [value,value,value...]</code><br><br>
+          &nbsp;I prefer to use the latter. It seems simpler to me to start the Array, name the Array and input values at the same time. When using the former you <b>MUST</b> capitalize when typing <code>Array.new</code>. If you want to change a specific entrance in an Array, you merely have to remember which number on the list it is (remember we start counting from 0!) and do this:<br><br><code>Array_name[n] = Input</code><br><br>
+          where <code>n</code> equals the position in the array (0, 1, 2, 3...).<br><br>
+          &nbsp; Now I've been talking about Arrays but I've yet to mention what you can put in them. Well, strings and numbers. Now if you're asking if that's all, how about Arrays? That's right, you can put Arrays <b>inside</b> of Arrays. Arrayception.<br><br> <img src="../imgs/tim-and-eric-mind-blown.gif"><br><br> If you're having trouble visualizing that, here you go:<br><br>
+          <code>Array_name = [[0],[1],[2]]</code><br><br>
+          &nbsp;That's what it looks like. Hopefully your mind hasn't been completely blown yet because that's not all. You can also put Hashes inside of Arrays too! But we don't even know what a Hash looks like yet, or even what it is.<br><br>
+          &nbsp;If an Array is an ordered list, a Hash is an unordered one. Where the values in an Array are assigned to numbers signifying their place in the list, the values in a Hash are assigned to a key of your choosing. If you're slightly confused, don't worry I'm about to give you an example. Hashes are started the exact same way Arrays are, except instead of using [] you use {}. So it looks like this:<br><br><code>Hash_name = Hash.new<br><br>or<br><br>Hash_name = {key => value, key => value, key => value...}</code><br><br>
+          &nbsp;Keys can be strings although I prefer to use symbols. Instead of "key" it would be :key. Now you might have wondered already "Can keys also be numbers?". Well yes but usually that's what arrays are for. Hashes are for when you want to associate one thing with another. For example, birthdays with names or a color with an emotion. If I wanted to keep track of the type of car my friends and family drives I'd use a hash:<br><br><code>Array_name = {'Sue' => 'Coupe', 'Bob' => 'Truck', 'Tom' => 'Sedan', 'Mary' => 'Hybrid'}</code><br><br>
+          &nbsp;The keys are the names and the values are the cars. Just like you can put Arrays and Hashes into Arrays, you can also put them both into Hashes. You could have a Hash inside of an Array inside of a Hash. This might not sound too interesting, but the possibilities are very interesting. I hope this post helped you and if not, then there's an old Confucian saying, <q><a href="https://www.google.com">Google knows all!</a></q>
+        </p>
+      </div>
+      <div id="navbar">
+        <ul>
+          <li><a href="https://djoseph1250.github.io">HOME</a></li>
+            <span id="posts">
+              <li>BLOG POSTS</li>
+              <li>Arrays &amp; Hashes</li>
+              <li><a href="http://djoseph1250.github.io/blog/t1-git-blog.html">Git and GitHub</a></li>
+              <li><a href="http://djoseph1250.github.io/blog/c1-chefs-kitchen.html">Fireside Chat Reflection</a></li>
+              <li><a href="http://djoseph1250.github.io/blog/t2-css-design.html">Margins, Borders &amp; Padding</a></li>
+              <li><a href="http://djoseph1250.github.io/blog/c3_thinking_style.html">Thinking About Thinking</a></li>
+            </span>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">ABOUT ME</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <table>
+        <th><img src="https://secure.gravatar.com/avatar/ee5bc135fe8ae28b688127c6d6bc4b33.png?r=PG&d=mm&s=150" id="selfie"></th>
+        <th><a href="https://www.linkedin.com/in/djavanjoseph"><img src="http://www.william-joy.com/images/linkedinicon4.png" alt="LinkedIn"></a></th>
+        <th><a href="https://github.com/DJoseph1250"><img src="../imgs/github-9-256.png" alt="GitHub"></a></th>
+        <th><a href="https://twitter.com/djavanjoseph"><img src="http://shaeallison.webfactional.com/apps/coachella/photos/twitter.png" alt="Twitter"></a></th>
+        <th><a href="mailto:djoseph1250@gmail.com"><img src="http://www.fredonia.edu/its/helpdesk/_images/gmail_new.png" alt="GMail"></a></th>
+
+      </table>
+    </footer>
+  </body>
+</html>
