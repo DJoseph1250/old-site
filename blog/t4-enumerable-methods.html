@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Sweet Talk - Ruby Cartography </title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  </head>
+
+  <body>
+    <div id="head">
+      <img src="http://f1.bcbits.com/img/0003590716_100.png" alt="Sweet Talk" />
+      <h2 class="head">Ruby Cartography</h2>
+      <h4 class="head">3/1/2015</h4>
+    </div>
+    <div id="center">
+      <div id="content">
+        <p>
+          &nbsp; In case the title wasn't enough of a hint, this blog post will be dedicated to mapping. Not the Amerigo Vespucci kind. The enumerable. Confused? Well hopefully by the time you're done reading this you won't be. Let's start with explaining enumerables before we get into <code>map</code>.<br><br>
+          &nbsp;Enumerables are ways to search, sort and alter arrays, hashes and the values inside of them. What if you wanted to change the properties of all the values in an array? If it's a short array you could just call each individual one. It's inefficient, but it would work. However, what if it's an array with hundreds of values? Then you should use a loop. But what if there was a simpler way? A way to influence each entrance, or the ones that you just need, on only one line? Here's where enumerables come to save the day. Enumerables allow one to iterate over an entire hash or array. What does it look like? Well here's an example using <code>map</code>:<br><br><code>array_name.map {|v| return v}</code><br><br>
+          &nbsp;You've probably noticed the curly brackets and their content. The part inside the lines represents the objects or values inside of the array. The part after that is the block. It helps the enumerable know what exactly it is that you want to do and what you want to do it to. Not every enumerable requires a block afterwards to do something, but they all can work with one. But I still haven't told you what <code>map</code> does.<br><br>
+          &nbsp; <code>Map</code> is a non-destructive enumerable. This means that it doesn't change the original array it has been called on. It creates an exact copy of an array. Hence the name map. Then you can do whatever you want to that array, without altering the original. However, there is a destructive version of <code>map</code> known as <code>map!</code>. The exclamation mark at the end tells ruby to iterate over the original. For example, if
+          <code>array = [1,2,3,4,5]</code> then <code>array.map! {|i| i*2}</code> will change the values in <code>array</code> to double what they are or <code>array = [2,4,6,8,10]</code>. Whereas with ordinary <code>map</code> it will create a copy. So if you wanted to make a copy and iterate over that you'd do this:<br><br>
+          <code>array = [1,2,3,4,5]<br>
+          array_clone = array.map {|i| i*2}
+          </code><br><br>
+          And then the value of <code>array_clone</code> would change to be the values of <code>array</code> doubled, while the values of <code>array</code> would stay the same. So that's how you use <code>map</code> and if you don't know, now you know.
+
+
+      </div>
+      <div id="navbar">
+        <ul>
+          <li><a href="https://djoseph1250.github.io">HOME</a></li>
+            <span id="posts">
+              <li>BLOG POSTS</li>
+              <li><a href="http://djoseph1250.github.io/blog/t3-arrays-hashes.html">Arrays &amp; Hashes</a></li>
+              <li><a href="http://djoseph1250.github.io/blog/t1-git-blog.html">Git and GitHub</a></li>
+              <li><a href="http://djoseph1250.github.io/blog/c1-chefs-kitchen.html">Fireside Chat Reflection</a></li>
+              <li><a href="http://djoseph1250.github.io/blog/c4-tech-issues.html">Five Guys Burgers &amp; Fries</a></li>
+              <li><a href="http://djoseph1250.github.io/blog/t2-css-design.html">Margins, Borders &amp; Padding</a></li>
+              <li>Ruby Cartography</li>
+              <li><a href="http://djoseph1250.github.io/blog/c3_thinking_style.html">Thinking About Thinking</a></li>
+            </span>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">ABOUT ME</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <table>
+        <th><img src="https://secure.gravatar.com/avatar/ee5bc135fe8ae28b688127c6d6bc4b33.png?r=PG&d=mm&s=150" id="selfie"></th>
+        <th><a href="https://www.linkedin.com/in/djavanjoseph"><img src="http://www.william-joy.com/images/linkedinicon4.png" alt="LinkedIn"></a></th>
+        <th><a href="https://github.com/DJoseph1250"><img src="../imgs/github-9-256.png" alt="GitHub"></a></th>
+        <th><a href="https://twitter.com/djavanjoseph"><img src="http://shaeallison.webfactional.com/apps/coachella/photos/twitter.png" alt="Twitter"></a></th>
+        <th><a href="mailto:djoseph1250@gmail.com"><img src="http://www.fredonia.edu/its/helpdesk/_images/gmail_new.png" alt="GMail"></a></th>
+
+      </table>
+    </footer>
+  </body>
+</html>
