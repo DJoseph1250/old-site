@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Sweet Talk - Visual Editor</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  </head>
+
+  <body>
+    <div id="head">
+      <img src="http://f1.bcbits.com/img/0003590716_100.png" alt="Sweet Talk" />
+      <h2 class="head">Visual Editor</h2>
+      <h4 class="head">9/7/2015</h4>
+    </div>
+    <div id="center">
+      <div id="content">
+        <p>
+          &nbsp;Last week I was given a task that required me changing one line in a text file, to which my response was, "I'm not opening a file in sublime just to change one line. There must be a way to edit text files in the command line since I'm already here". Horrifically lazy, I know, I'll survive. But it was also a question I'd had for a while and never got around to learning the answer. I knew how to create, read, and delete files, but not how to edit them. Now was the perfect time. So like many before me who thirsted for knowledge, I went to the omniscient Google for the answer.<pre><code>  vi filename</code></pre></p><p>
+          &nbsp;That's it. Just type into the console 'vi' and then the filename. The 'vi' stands for 'Visual Editor'. "But Djavan, shouldn't it be 've' then"? It should, but the choice wasn't mine. Instead they decided to choose the first two letters in 'visual'. If the filename exists it will open it in the command line. If it doesn't, it will create it and then open it. However, you can't just start typing when the file opens in the command line. The command line Visual Editor has it's own commands that need to be used.</p><p>
+          &nbsp;There are quite a lot, that either do nearly the exact same thing or aren't that useful at all, so I'll only go over some very basic ones. I doubt any of us will be using Visual Editor to edit 1000 line programs and it shouldn't be used for that. With text editors around, it's only good for creating and editing small files and that's mainly what I do with it, if I even use it at all. So these commands should suffice:
+          <ul>
+          <li>x<br>Used for deleting characters while not in edit mode.</li>
+          <li>dd<br>Deletes the entrie line the cursor is currently on.</li>
+          <li>i<br>Used to enter edit mode. From there you can add and delete characters normally. Press esc to exit edit mode.</li>
+          <li>u<br> Used to undo any action that was just completed. Cannot be used to undo multiple actions like command-z(ctrl-zfor windows). </li>
+          <li>:x<br>Unlike the others you must press enter/return after inputting this command or else it won't execute. It's used to exit a file and save any changes made. Cannot be used while in edit mode.</li>
+          <li>:q<br>Just like :x, enter/return must be pressed afterwards. It is used to ezit a file with either no changes or already saved changes. If you attempt to exit a file with saved changes, without saving them, it will tell you to use the next command in this list.</li>
+          <li>:q!<br>Used to forcefully exit a file with unsaved changes.</li>
+          </ul>
+          </p>
+          <p>&nbsp;And that's all that you will probably ever need. If you want to know more there are useful cheat sheets out there. Here's<a href = "http://www.lagmonster.org/docs/vi.html"> one</a>.This also isn't the only way to edit text files in the console. There is another way that I know of, known as 'emacs'. But I'm not too familiar with it. If you want to know more about it, I'm sadly not your guy. But thankfully google exists.</p>
+      </div>
+      <div id="navbar">
+        <ul>
+          <li><a href="https://djoseph1250.github.io">HOME</a></li>
+            <span id="posts">
+              <li>BLOG POSTS</li>
+              <li><a href="http://djoseph1250.github.io/blog/t3-arrays-hashes.html">Arrays &amp; Hashes</a></li>
+              <li><a href="http://djoseph1250.github.io/blog/t1-git-blog.html">Git and GitHub</a></li>
+              <li>Five Guys Burgers &amp; Fries</li>
+              <li><a href="http://djoseph1250.github.io/blog/t2-css-design.html">Margins, Borders &amp; Padding</a></li>
+              <li><a href="http://djoseph1250.github.io/blog/t4-enumerable-method.html">Ruby Cartography</a></li>
+            </span>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">ABOUT ME</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <table>
+        <th><img src="https://secure.gravatar.com/avatar/ee5bc135fe8ae28b688127c6d6bc4b33.png?r=PG&d=mm&s=150" id="selfie"></th>
+        <th><a href="https://www.linkedin.com/in/djavanjoseph"><img src="../imgs/linkedinicon4.png" alt="LinkedIn"></a></th>
+        <th><a href="https://github.com/DJoseph1250"><img src="../imgs/github-9-256.png" alt="GitHub"></a></th>
+        <th><a href="https://twitter.com/djavanjoseph"><img src="http://shaeallison.webfactional.com/apps/coachella/photos/twitter.png" alt="Twitter"></a></th>
+        <th><a href="mailto:djoseph1250@gmail.com"><img src="http://www.fredonia.edu/its/helpdesk/_images/gmail_new.png" alt="GMail"></a></th>
+
+      </table>
+    </footer>
+  </body>
+</html>
