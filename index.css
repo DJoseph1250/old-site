@@ -1,0 +1,84 @@
+@font-face {
+	font-family: noMansSky;
+	src: url(geonms-webfont.ttf);
+}
+
+body {
+	margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+	background-color: goldenrod;
+}
+
+video {
+    z-index: -99; 
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+#binary-hello {
+	position: fixed;
+	z-index: 0;
+	background-color: rgba(0, 0, 0, 1);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#binary {
+	color: goldenrod;
+	font-size: 7em;
+}
+
+#overlay {
+    position: fixed;
+	z-index: -2;
+	background-color: rgba(0,0,0,0.7);
+	height: 830px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#about-me {
+	z-index: -1;
+	color: goldenrod;
+	height: 810px;
+	width: 1440px;
+	display: table-cell;
+	vertical-align: middle;
+	/*padding: 100%;*/
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: rgba(0,0,0,0.8);*/
+	border-style: solid;
+	border-color: goldenrod;
+	border-width: 10px;
+	text-align: center;
+	font-size: 2em;
+	font-family: noMansSky;
+}
+
+#row1 {
+
+}
+
+#row2 {
+	 left: 10px;
+}
+
+#row3 {
+
+}
+
